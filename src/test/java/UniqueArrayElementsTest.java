@@ -46,7 +46,7 @@ public class UniqueArrayElementsTest {
     @Test
     public void UniqueArraySol3Test() {
         int[] randomIntegers = {1, 2, 1, 3, 3, 4, 4, 5};
-        int[] expectedResult = {1, 2, 3, 4, 5, 0, 0, 0};
+        int[] expectedResult = {1, 2, 3, 4, 5};
         int[] actualResult = uniqueElementsImplSol3.uniqueArray(randomIntegers);
         assertArrayEquals(expectedResult, actualResult);
     }
