@@ -1,4 +1,9 @@
 
+To build the code :
+mvn clean install
+
+To execute -
+java -jar problemset-1.0-SNAPSHOT.jar
 
 UniqueElementsImplSol1 
 
