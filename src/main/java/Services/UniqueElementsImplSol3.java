@@ -8,7 +8,7 @@ import java.util.*;
 public class UniqueElementsImplSol3 implements UniqueElements {
     @Override
     public int[] uniqueArray(int[] DataArray) {
-        int[] arrayOfUniqueElements = new int[DataArray.length];
+
 
         Map<Integer, Integer> elementAndCount = new HashMap();
 
@@ -22,6 +22,7 @@ public class UniqueElementsImplSol3 implements UniqueElements {
         }
 
         Set<Map.Entry<Integer, Integer>> entrySet = elementAndCount.entrySet();
+        int[] arrayOfUniqueElements = new int[entrySet.size()];
         int index = 0;
         for (Map.Entry<Integer, Integer> entry : entrySet) {
             if (entry.getValue() >= 1) {
